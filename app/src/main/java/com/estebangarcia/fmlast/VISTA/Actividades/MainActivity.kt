@@ -1,7 +1,8 @@
-package com.estebangarcia.fmlast
+package com.estebangarcia.fmlast.VISTA.Actividades
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.estebangarcia.fmlast.R
 
 class MainActivity : AppCompatActivity() {
 
