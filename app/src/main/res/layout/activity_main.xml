@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9D1111"
+    android:background="@color/colorrojofondo"
     tools:context=".VISTA.Actividades.MainActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="last.fm"
+        android:text="@string/tituloApp"
         android:textColor="#FFFFFF"
         android:textSize="80sp"
         app:fontFamily="@font/habibi"
@@ -24,7 +24,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Developed by Esteban García"
+        android:text="@string/desarrollador"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         app:fontFamily="@font/habibi"
