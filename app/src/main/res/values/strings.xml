@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">fmlast</string>
+    <string name="tituloApp">last.fm</string>
+    <string name="desarrollador">Developed by Esteban García</string>
+    <string name="textoClaveUI">Clave:</string>
+    <string name="textoIniciandoSesionUI">Iniciando sesión</string>
+    <string name="textoSalirUI">Salir</string>
+    <string name="textoIniciarUI">Iniciar Sesión</string>
+    <string name="textoCorreoUI">Correo:</string>
+    <string name="textoCredencialesUI">Si aún no estas registrado, te aconsejamos comunicarte a la línea 3194435993.\n\nIngresa tus credenciales:</string>
+    <string name="textoDescargaUI">Bienvenido.\n\nEstamos cargando tu configuración, si es la primera vez puede tardar un momento.</string>
+    <string name="Texto_titulo1_menu">Top Canciones</string>
+    <string name="Texto_titulo2_menu">Top Artistas</string>
+    <string name="Texto_titulo3_menu">Cerrar sesión</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="textoNombre">Nombre:</string>
+    <string name="textoImagenCancionUI">imagencancion</string>
 </resources>
