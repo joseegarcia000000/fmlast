@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacionsesion"
+    app:startDestination="@id/cancionesFragment">
+
+    <fragment
+        android:id="@+id/cancionesFragment"
+        android:name="com.estebangarcia.fmlast.VISTA.Fragmentos.CancionesFragment"
+        android:label="fragment_canciones"
+        tools:layout="@layout/fragment_canciones" >
+        <action
+            android:id="@+id/action_cancionesFragment_to_artistasFragment"
+            app:destination="@id/artistasFragment"
+            app:popUpTo="@id/cancionesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/artistasFragment"
+        android:name="com.estebangarcia.fmlast.VISTA.Fragmentos.ArtistasFragment"
+        android:label="fragment_artistas"
+        tools:layout="@layout/fragment_artistas" >
+        <action
+            android:id="@+id/action_artistasFragment_to_cancionesFragment"
+            app:destination="@id/cancionesFragment"
+            app:popUpTo="@id/artistasFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
