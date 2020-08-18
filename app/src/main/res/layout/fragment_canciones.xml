@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     tools:context=".VISTA.Fragmentos.CancionesFragment">
 
-
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@+id/recyclerCanciones" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton2"
+        android:id="@+id/botonAnterior"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -69,11 +69,11 @@
         android:id="@+id/textoPaginacionActual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
+        android:text="C"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton2"
+        app:layout_constraintBottom_toBottomOf="@+id/botonAnterior"
         app:layout_constraintEnd_toStartOf="@+id/botonSiguiente"
-        app:layout_constraintStart_toEndOf="@+id/floatingActionButton2"
+        app:layout_constraintStart_toEndOf="@+id/botonAnterior"
         app:layout_constraintTop_toTopOf="@+id/botonSiguiente" />
 
     <TextView
@@ -96,9 +96,9 @@
         android:layout_marginRight="20dp"
         android:text="1"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="@+id/floatingActionButton2"
-        app:layout_constraintEnd_toStartOf="@+id/floatingActionButton2"
-        app:layout_constraintTop_toTopOf="@+id/floatingActionButton2" />
+        app:layout_constraintBottom_toBottomOf="@+id/botonAnterior"
+        app:layout_constraintEnd_toStartOf="@+id/botonAnterior"
+        app:layout_constraintTop_toTopOf="@+id/botonAnterior" />
 
     <TextView
         android:id="@+id/textView15"
@@ -106,12 +106,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
-        android:text="Página"
+        android:text="Páginas"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/botonSiguiente"
-        app:layout_constraintStart_toEndOf="@+id/floatingActionButton2"
+        app:layout_constraintStart_toEndOf="@+id/botonAnterior"
         app:layout_constraintTop_toBottomOf="@+id/textoPaginacionActual" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

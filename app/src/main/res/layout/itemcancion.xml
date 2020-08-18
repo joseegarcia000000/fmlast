@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:text="@string/textoNombre"
-                    android:textColor="@color/colorletrascard"
+                    android:textColor="@color/colorrojooscurofondo"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/guideline13"
                     app:layout_constraintTop_toTopOf="@+id/guideline14" />
@@ -67,6 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:textColor="@color/design_default_color_on_secondary"
                     app:layout_constraintBottom_toBottomOf="@+id/textView8"
                     app:layout_constraintStart_toEndOf="@+id/textView8" />
 
@@ -76,7 +77,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Duración:"
-                    android:textColor="@color/colorletrascard"
+                    android:textColor="@color/colorrojooscurofondo"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/guideline13"
                     app:layout_constraintTop_toBottomOf="@+id/textView8" />
@@ -87,6 +88,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:textColor="@color/design_default_color_on_secondary"
                     app:layout_constraintBottom_toBottomOf="@+id/textView10"
                     app:layout_constraintStart_toEndOf="@+id/textView10" />
 
@@ -96,7 +98,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Oyentes:"
-                    android:textColor="@color/colorletrascard"
+                    android:textColor="@color/colorrojooscurofondo"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/guideline13"
                     app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -107,6 +109,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:textColor="@color/design_default_color_on_secondary"
                     app:layout_constraintBottom_toBottomOf="@+id/textView12"
                     app:layout_constraintStart_toEndOf="@+id/textView12" />
 
@@ -116,7 +119,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Trasmitible:"
-                    android:textColor="@color/colorletrascard"
+                    android:textColor="@color/colorrojooscurofondo"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/guideline13"
                     app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -127,6 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:textColor="@color/design_default_color_on_secondary"
                     app:layout_constraintBottom_toBottomOf="@+id/textView14"
                     app:layout_constraintStart_toEndOf="@+id/textView14" />
 
@@ -136,19 +140,21 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="mbid:"
-                    android:textColor="@color/colorletrascard"
+                    android:textColor="@color/colorrojooscurofondo"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/guideline13"
                     app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
                 <TextView
                     android:id="@+id/textoMbidCancion"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView17"
-                    app:layout_constraintStart_toEndOf="@+id/textView17" />
+                    android:textColor="@color/design_default_color_on_secondary"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toEndOf="@+id/textView17"
+                    app:layout_constraintTop_toTopOf="@+id/textView17" />
 
                 <TextView
                     android:id="@+id/textView19"
@@ -156,18 +162,20 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="Artista:"
-                    android:textColor="@color/colorletrascard"
+                    android:textColor="@color/colorrojooscurofondo"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/guideline13"
                     app:layout_constraintTop_toBottomOf="@+id/divider" />
 
                 <TextView
-                    android:id="@+id/textoNombreArtista"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textoNombreArtistaC"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
+                    android:textColor="@color/design_default_color_on_secondary"
                     app:layout_constraintBottom_toBottomOf="@+id/textView19"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
                     app:layout_constraintStart_toEndOf="@+id/textView19" />
 
                 <View
@@ -187,28 +195,30 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="mbid:"
-                    android:textColor="@color/colorletrascard"
+                    android:textColor="@color/colorrojooscurofondo"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="@+id/guideline13"
                     app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
                 <TextView
-                    android:id="@+id/textoMbidArtista"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textoMbidArtistaC"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView21"
-                    app:layout_constraintStart_toEndOf="@+id/textView21" />
+                    android:textColor="@color/design_default_color_on_secondary"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline15"
+                    app:layout_constraintStart_toEndOf="@+id/textView21"
+                    app:layout_constraintTop_toTopOf="@+id/textView21" />
 
                 <Button
                     android:id="@+id/botonVisitarCancion"
                     style="@android:style/Widget.DeviceDefault.Button"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="35dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:text="VER EN WEB"
                     android:textColor="#FFFFFF"
                     android:textSize="10sp"
@@ -216,13 +226,13 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
                 <Button
-                    android:id="@+id/botonVisitarArtista"
+                    android:id="@+id/botonVisitarArtistaC"
                     style="@android:style/Widget.DeviceDefault.Button"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
+                    android:layout_height="35dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
                     android:text="VER EN WEB"
                     android:textColor="#FFFFFF"
@@ -236,7 +246,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.05" />
+                    app:layout_constraintGuide_begin="15dp" />
 
                 <androidx.constraintlayout.widget.Guideline
                     android:id="@+id/guideline14"
@@ -299,7 +309,7 @@
             app:layout_constraintGuide_percent="0.5" />
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imagenCancion"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:contentDescription="@string/textoImagenCancionUI"
