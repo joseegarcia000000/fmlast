@@ -1,5 +1,6 @@
 package com.estebangarcia.fmlast.MODELO.BD_LastFm.ConexionServicioGeo.GeoTopCanciones
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.estebangarcia.fmlast.INTERNO.NoConexionExcepcion
@@ -21,7 +22,9 @@ class ConexionServicioGeoTopCancionImpl (
             val respuestaDescarga=apiDescargaGeoTopCancion
                 .DescargaGeoTopCanciones(apiKey).await()
             rt=respuestaDescarga
+            Log.i("Respuesta","Descarga servicio geo:"+respuestaDescarga)
         } catch (e: Exception){
+            Log.e("Error"," Conexion servicio geo:"+e)
             var listaimagenes= listOf(Image("",""),Image("",""),Image("",""),Image("",""))
             var artista=Artist("","","")
             var rank=AttrRank("1")
@@ -33,6 +36,7 @@ class ConexionServicioGeoTopCancionImpl (
             rt=r
         }
         catch (errorConexion: NoConexionExcepcion){
+            Log.e("Error"," Conexion servicio geo:"+errorConexion)
             var listaimagenes= listOf(Image("",""),Image("",""),Image("",""),Image("",""))
             var artista=Artist("","","")
             var rank=AttrRank("1")
