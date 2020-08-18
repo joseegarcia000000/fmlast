@@ -6,7 +6,9 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -26,7 +28,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 app:defaultNavHost="true"
-                app:navGraph="@navigation/navegacionsesion"/>
+                app:navGraph="@navigation/navegacionsesion" />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
@@ -46,5 +48,15 @@
         app:menu="@menu/menusesion">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/textocontrolhost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

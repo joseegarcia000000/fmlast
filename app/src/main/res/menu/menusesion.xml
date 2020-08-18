@@ -4,15 +4,15 @@
 
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/perfilmenu"
+        android:id="@+id/topcanciones"
         android:icon="@drawable/icono_canciones"
         android:title="@string/Texto_titulo1_menu" />
     <item
-        android:id="@+id/trabajomenu"
+        android:id="@+id/topartistas"
         android:icon="@drawable/icono_artistas"
         android:title="@string/Texto_titulo2_menu" />
     <item
-        android:id="@+id/infomenu"
+        android:id="@+id/salirfragmento"
         android:icon="@drawable/icono_exit"
         android:title="@string/Texto_titulo3_menu" />
 

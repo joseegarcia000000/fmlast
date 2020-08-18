@@ -148,7 +148,7 @@
                     android:layout_marginTop="10dp"
                     android:autofillHints=""
                     android:ems="10"
-                    android:inputType="number"
+                    android:inputType="textEmailAddress"
                     android:textColor="@color/colorcardfondo"
                     app:layout_constraintEnd_toStartOf="@+id/guideline6"
                     app:layout_constraintHorizontal_bias="0.497"

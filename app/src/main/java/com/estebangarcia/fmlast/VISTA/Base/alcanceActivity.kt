@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.cancel
 import kotlin.coroutines.CoroutineContext
 
 abstract class alcanceActivity:AppCompatActivity(),CoroutineScope {
@@ -22,6 +23,9 @@ abstract class alcanceActivity:AppCompatActivity(),CoroutineScope {
     }
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
+        job=Job()
+    }
+    open fun cuadroDialogo(){
         job= Job()
     }
     override fun onDestroy() {

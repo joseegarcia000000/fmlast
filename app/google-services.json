@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "271073328264",
+    "firebase_url": "https://basededatoslastfm.firebaseio.com",
+    "project_id": "basededatoslastfm",
+    "storage_bucket": "basededatoslastfm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271073328264:android:c2f14b0857638ac1b1f33d",
+        "android_client_info": {
+          "package_name": "com.estebangarcia.fmlast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271073328264-g2pm59cot6qjngg5drjmu3irrfkeah0j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.estebangarcia.fmlast",
+            "certificate_hash": "75980c1311146834950acf83e567d8ac22c5a9ff"
+          }
+        },
+        {
+          "client_id": "271073328264-ool98bim517vs2khtqc3nrkcghjmjioa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqAU2eFlBUtxjRWI_T6_DVbYDNjpTgaXA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271073328264-ool98bim517vs2khtqc3nrkcghjmjioa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

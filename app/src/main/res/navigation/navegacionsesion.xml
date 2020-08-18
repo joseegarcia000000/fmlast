@@ -13,6 +13,8 @@
         <action
             android:id="@+id/action_cancionesFragment_to_artistasFragment"
             app:destination="@id/artistasFragment"
+            app:enterAnim="@anim/left_in"
+            app:exitAnim="@anim/left_out"
             app:popUpTo="@id/cancionesFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -24,6 +26,8 @@
         <action
             android:id="@+id/action_artistasFragment_to_cancionesFragment"
             app:destination="@id/cancionesFragment"
+            app:enterAnim="@anim/right_in"
+            app:exitAnim="@anim/rigth_out"
             app:popUpTo="@id/artistasFragment"
             app:popUpToInclusive="true" />
     </fragment>
